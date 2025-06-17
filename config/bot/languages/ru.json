@@ -1,0 +1,188 @@
+{
+	"commands": {
+		"tag": "J-CL Interface",
+		"anime": {
+			"api": "shikimori",
+			"title": "{{title}}",
+			"description": "{{description}}",
+			"url": "{{animeUrl}}",
+			"image": "{{image}}",
+			"genres": "**Жанры:** {{genres}}",
+			"episodeCount": "**Эпизоды:** {{episodeCount}}",
+			"score": "**Оценка:** {{score}}",
+			"animeView": "Открыть на Shikimori"
+		},
+		"help": {
+			"title": "{{helpEmoji}}・**Меню команд**",
+			"command": {
+				"anime": {
+					"description": "**Аниме**"
+				},
+				"serverinfo": {
+					"description": "**Информация**"
+				},
+				"setLocale": {
+					"description": "**Язык**"
+				},
+				"setupChannels": {
+					"description": "**Каналы**"
+				}
+			},
+			"intro": "commands.help.intro"
+		},
+		"language": {
+			"updated": "{{flag}} **Язык установлен на {{language}}**"
+		},
+		"serverInfo": {
+			"title": "О сервере",
+			"noDescription": "Описание отсутствует.",
+			"generalLabel": "Обзор",
+			"guildOwnerId": "Владелец: <@{{ownerId}}>",
+			"createdAt": "Дата создания: {{guildCreatedAt}}",
+			"totalMembersCount": "Всего участников: [ {{totalMembersCount}} ]",
+			"guildMembersCount": "Пользователи: {{nonBotMembersCount}}",
+			"guildBotsCount": "Боты: {{botMembersCount}}",
+			"totalChannelsCount": "Всего каналов: [ {{totalChannels}} ]",
+			"textChannelsCount": "{{textChannelsIco}} `{{textChannels}}`",
+			"voiceChannelsCount": "{{voiceChannelsIco}} `{{voiceChannels}}`",
+			"categoriesCount": "{{categoriesIco}} `{{categoryChannels}}`",
+			"stageChannelsCount": "{{stageChannelsIco}} `{{stageChannels}}`",
+			"forumsCount": "{{forumsIco}} `{{forumChannels}}`",
+			"totalEmojisCount": "Всего эмодзи: [ {{totalEmojisCount}} ]",
+			"animatedEmojisCount": "Анимированные: {{animatedEmojisCount}}",
+			"staticEmojisCount": "Статические: {{staticEmojisCount}}",
+			"guildRolesCount": "Всего ролей: [ {{totalRolesCount}} ]"
+		},
+		"report": {
+			"description": "Напищи сообщению создателю бота",
+			"typeDescription": "Выбери тип",
+			"reportDescription": "Опиши свю ошибку или предложение",
+			"bugTitle": "{{bug}} | Ошибка",
+			"suggestionTitle": "{{suggestion}} | Предложение",
+			"otherTitle": "{{other}} | Другое",
+			"reportBy": "Репорт отправил {{user}} (Сервер: {{guild}})",
+			"succesSendReport": "**Репорт успешно отправлен**",
+			"fields": {
+				"description": "Описание"
+			},
+			"preview": "Предпросмотр репорта"
+		}
+	},
+	"components": {
+		"menus": {
+			"welcomeChannelSelect": {
+				"placeholder": "Выберите канал для приветсвия",
+				"channelChanged": "**Канал для приветствия изменён на <#{{channelId}}>**",
+				"channelSet": "**Канал для приветствия установлен на <#{{channelId}}>.**",
+				"channelAlreadySet": "Этот канал уже установлен"
+			},
+			"leaveChannelSelect": {
+				"placeholder": "Выберите канал для прощания",
+				"channelChanged": "**Канал для прощания изменён на <#{{channelId}}>**",
+				"channelSet": "**Канал для прощания установлен на <#{{channelId}}>.**",
+				"channelAlreadySet": "Этот канал уже установлен"
+			},
+			"JTCSystemChannelSelect": {
+				"placeholder": "Выберите канал для системы Join To Create",
+				"channelChanged": "**Канал \"Join To Create\" изменён на <#{{channelId}}>**",
+				"channelSet": "**Канал \"Join To Create\" установлен на <#{{channelId}}>.**",
+				"channelAlreadySet": "Этот канал уже установлен"
+			},
+			"voiceHub": {
+				"channelSettings": {
+					"placeholder": "Изменить настройки канала",
+					"options": {
+						"nameLabel": "Имя",
+						"nameDescription": "Изменить имя канала",
+						"limitLabel": "Лимит",
+						"limitDescription": "Изменить лимит пользователей канала"
+					}
+				},
+				"channelPermissions": {
+					"placeholder": "Изменить разрешения канала",
+					"options": {
+						"lockChannelLabel": "Заблокировать",
+						"lockChannelDescription": "Заблокировать канал",
+						"unlockChannelLabel": "Разблокировать",
+						"unlockChannelDescription": "Разблокировать канал"
+					}
+				},
+				"channelInvite": {
+					"placeholder": "Выберите участника",
+					"inviteSuccess": "Пользователь приглашён в канал!",
+					"inviteError": "У пользователя отключены ЛС.",
+					"options": {
+						"inviteLabel": "Пригласить",
+						"inviteDescription": "Пригласить пользователя для доступа в канал"
+					}
+				}
+			}
+		},
+		"setupDescription": {
+			"title": "✨ **Настройка сервера**",
+			"text": "Выберите нужные параметры с помощью селекторов ниже:"
+		},
+		"modals": {
+			"channelName": {
+				"title": "Изменить имя канала",
+				"label": "Введите новое имя канала",
+				"successMessage": "Имя канала успешно изменено",
+				"exampleName": "Пример: Общение",
+				"renameCooldownMessage": "Пожалуйста, подождите ещё {{remainingMinutes}} минут(ы) перед следующими изменениями имени канала"
+			},
+			"channelLimit": {
+				"title": "Изменить лимит пользователей",
+				"label": "Введите лимит",
+				"successMessage": "Лимит пользователей изменен",
+				"invalidLimit": "Введите число от 0 до 99 (0 — безлимит)",
+				"exampleName": "0 (для безлимита)"
+			}
+		}
+	},
+	"events": {
+		"voiceHub": {
+			"title": "Добро пожаловать на ваш временный голосовой канал!",
+			"customizeDescription": "Вы можете изменить различные настройки для вашего канала, используя приведенные ниже опции.\n",
+			"importantInfoDescription": "Это **временный** голосовой канал, который будет удален, если в нем не останется участников.",
+			"permissionsUpdated": "Голосовой канал был успешно изменен"
+		}
+	},
+	"myServer": {
+		"embeds": {
+			"infoAboutServer": {
+				"title": "Добро пожаловать сервер Игрова Иллюзия!",
+				"description": "Здесь вы найдете идеальное место для общения, обсуждения и игры ваших любимых видеоигр. Присоединяйтесь к нашему дружелюбному сообществу, где вы сможете найти единомышленников, обменяться опытом, получить советы и даже найти новых друзей для совместной игры.\n\n Не упустите возможность поддержать создателя нашего сервера, следите за его трансляциями на Twitch и будьте в курсе последних новостей и событий в мире игр.\n\n Присоединяйтесь к нам и начните новое приключение вместе с нами.",
+				"fields": {
+					"links": "- [Присоединиться к серверу Discord](https://discord.gg/gameillusion)\n- [Следить за трансляциями на Twitch](https://twitch.tv/drafwod)"
+				}
+			},
+			"serverRules": {
+				"politeEmbed": {
+					"title": "Будьте вежливы и уважительны",
+					"description": "Относитесь ко всем с уважением. Никакие домогательства, угрозы, оскорбления по расовому, национальному или сексуальному признаку не допускаются."
+				},
+				"noSpamEmbed": {
+					"title": "Никакого спама или рекламы",
+					"description": "Никакой рекламы (приглашения на сервер, ссылки на другие сайты и т.д.) без разрешения администраторов сервера."
+				},
+				"personalDataEmbed": {
+					"title": "Личные данные",
+					"description": "Никакого слива личных данных  одного пользователя другим пользователем. Если не было получено согласие."
+				},
+				"gameCommunity": {
+					"title": "Игровое сообщество",
+					"description": "Для поиска людей на игры, используйте только отведенные роли с играми. Например <@&1220061049269522462>"
+				},
+				"reportToUsEmbed": {
+					"title": "Сообщите нам",
+					"description": "Если вы видите, что против вас ведутся действия, заставляющие чувствовать вас некомфортно, сообщите об этом персоналу сервера."
+				}
+			}
+		},
+		"buttons": {
+			"serverRules": {
+				"label": "Правила"
+			}
+		}
+	}
+}

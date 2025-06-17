@@ -1,0 +1,26 @@
+name: Deploy to VPS
+
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout Repository
+     uses: actions/checkout@v2
+
+   - name: Update Files on VPS
+     uses: appleboy/ssh-action@master
+     with:
+      host: ${{ secrets.VPS_HOST }}
+      username: ${{ secrets.VPS_USER }}
+      key: ${{ secrets.VPS_SSH }}
+      port: ${{ secrets.VPS_PORT }}
+      script: |
+       cd ~/home/discordBot
+       git pull origin main
+       docker compose down
+       docker compose up -d --build

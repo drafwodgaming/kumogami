@@ -1,0 +1,150 @@
+{
+	"commands": {
+		"tag": "J-CL Interface",
+		"anime": {
+			"api": "shikimori",
+			"title": "{{title}}",
+			"description": "{{description}}",
+			"url": "{{animeUrl}}",
+			"image": "{{image}}",
+			"genres": "**Жанры:** {{genres}}",
+			"episodeCount": "**Эпизоды:** {{episodeCount}}",
+			"score": "**Оценка:** {{score}}",
+			"animeView": "Открыть на Shikimori"
+		},
+		"help": {
+			"title": "{{helpEmoji}}・**Меню команд**",
+			"command": {
+				"anime": {
+					"description": "**Аниме**"
+				},
+				"serverinfo": {
+					"description": "**Информация**"
+				},
+				"setLocale": {
+					"description": "**Язык**"
+				},
+				"setupChannels": {
+					"description": "**Каналы**"
+				}
+			},
+			"intro": "commands.help.intro"
+		},
+		"language": {
+			"updated": "{{flag}} **Мова встановлена на {{language}}**"
+		},
+		"serverInfo": {
+			"title": "Про сервер",
+			"noDescription": "Опис відсутній.",
+			"generalLabel": "Огляд",
+			"guildOwnerId": "Власник: <@{{ownerId}}>",
+			"createdAt": "Створено: {{guildCreatedAt}}",
+			"totalMembersCount": "Усього учасників: [ {{totalMembersCount}} ]",
+			"guildMembersCount": "Користувачі: {{nonBotMembersCount}}",
+			"guildBotsCount": "Боти: {{botMembersCount}}",
+			"totalChannelsCount": "Усього каналів: [ {{totalChannels}} ] ",
+			"textChannelsCount": "{{textChannelsIco}} `{{textChannels}}`",
+			"voiceChannelsCount": "{{voiceChannelsIco}} `{{voiceChannels}}`",
+			"categoriesCount": "{{categoriesIco}} `{{categoryChannels}}`",
+			"stageChannelsCount": "{{stageChannelsIco}} `{{stageChannels}}`",
+			"forumsCount": "{{forumsIco}} `{{forumChannels}}`",
+			"totalEmojisCount": "Усього емодзі: [ {{totalEmojisCount}} ]",
+			"animatedEmojisCount": "Анімовані: {{animatedEmojisCount}}",
+			"staticEmojisCount": "Статичні: {{staticEmojisCount}}",
+			"guildRolesCount": "Усього ролей: [ {{totalRolesCount}} ]"
+		},
+		"report": {
+			"description": "Напиши повідомлення адміністратору бота",
+			"typeDescription": "Виберіть тип",
+			"reportDescription": "Опишіть свою помилку або пропозицію",
+			"bugTitle": "{{bug}} | Помилка",
+			"suggestionTitle": "{{suggestion}} | Пропозиція",
+			"otherTitle": "{{other}} | Інше",
+			"reportBy": "Репорт відправив {{user}} (Сервер: {{guild}})",
+			"succesSendReport": "**Репорт успешно отправлен**",
+			"fields": {
+				"description": "Опис"
+			},
+			"preview": "Попередній перегляд звіту"
+		}
+	},
+	"components": {
+		"menus": {
+			"welcomeChannelSelect": {
+				"placeholder": "Виберіть канал для привітання",
+				"channelChanged": "**Канал для привітання змінено на <#{{channelId}}>**",
+				"channelSet": "**Канал для привітання встановлено на <#{{channelId}}>.**",
+				"channelAlreadySet": "Цей канал уже налаштований"
+			},
+			"leaveChannelSelect": {
+				"placeholder": "Виберіть канал для прощання",
+				"channelChanged": "**Канал для прощання змінено на <#{{channelId}}>**",
+				"channelSet": "**Канал для прощання встановлено на <#{{channelId}}>.**",
+				"channelAlreadySet": "Цей канал уже налаштований"
+			},
+			"JTCSystemChannelSelect": {
+				"placeholder": "Виберіть канал для Join To Create",
+				"channelChanged": "**Канал \"Join To Create\" змінено на <#{{channelId}}>**",
+				"channelSet": "**Канал \"Join To Create\" встановлено на <#{{channelId}}>.**",
+				"channelAlreadySet": "Цей канал уже налаштований"
+			},
+			"voiceHub": {
+				"channelSettings": {
+					"placeholder": "Змінити налаштування каналу",
+					"options": {
+						"nameLabel": "Ім'я",
+						"nameDescription": "Змінити ім'я каналу",
+						"limitLabel": "Ліміт",
+						"limitDescription": "Змінити ліміт користувачів каналу"
+					}
+				},
+				"channelPermissions": {
+					"placeholder": "Змінити дозволи каналу",
+					"options": {
+						"lockChannelLabel": "Заблокувати",
+						"lockChannelDescription": "Заблокувати канал",
+						"unlockChannelLabel": "Розблокувати",
+						"unlockChannelDescription": "Розблокувати канал"
+					}
+				},
+				"channelInvite": {
+					"placeholder": "Оберіть учасника",
+					"inviteSuccess": "Користувача запрошено до каналу!",
+					"inviteError": "У користувача вимкнено ЛС.",
+					"options": {
+						"inviteLabel": "Запросити",
+						"inviteDescription": "Запросити користувача для доступу в канал"
+					}
+				}
+			}
+		},
+		"setupDescription": {
+			"title": "✨ **Налаштування сервера**",
+			"text": "Виберіть потрібні параметри за допомогою селекторів нижче:"
+		},
+		"modals": {
+			"channelName": {
+				"title": "Змінити ім'я каналу",
+				"label": "Введіть нове ім'я каналу",
+				"successMessage": "Ім'я каналу успішно змінено",
+				"exampleName": "Приклад: Обговорення",
+				"renameCooldownMessage": "Будь ласка, почекайте {{remainingMinutes}} хвилин(и) перед наступними змінами ім'я каналу"
+			},
+			"channelLimit": {
+				"title": "Змінити ліміт користувачів",
+				"label": "Введіть ліміт",
+				"successMessage": "Ліміт користувачів змінено",
+				"invalidLimit": "Введіть число від 0 до 99 (0 — безліміт)",
+				"exampleName": "0 (для безліміту)"
+			}
+		}
+	},
+	"events": {
+		"voiceHub": {
+			"title": "Ласкаво просимо у ваш тимчасовий голосовий канал!",
+			"customizeDescription": "Ви можете змінити різні налаштування для вашого каналу, використовуючи опції нижче.\n",
+			"importantInfoDescription": "Це **тимчасовий** голосовий канал, який буде видалено, якщо в ньому не залишиться учасників.",
+			"permissionsUpdated": "Голосовий канал був успішно змінений"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"warning": "<:warning:1273865513927446538>",
+
+	"nameTag": "<:nameTag:1273863187204411495>",
+	"limitPeople": "<:limit:1362582663390695645>",
+	"lockChannel": "<:lockChannel:1273863965650190346>",
+	"unlockChannel": "<:unlockChannel:1273864120491311135>",
+	"invite": "<:invite:1362656200054800465>",
+	"rules": "<:rules:1273864321528758454>",
+
+	"textChannel": "<:textChannel:1273862941657137162>",
+	"voiceChannel": "<:voiceChannel:1273862589666820209>",
+	"category": "<:category:1273861629024403496>",
+	"stage": "<:stage:1273862156353540107>",
+	"forum": "<:forum:1273861957468033096>",
+
+	"russianFlag": "<:russiaFlag:1273864908446109777>",
+	"ukraineFlag": "<:ukraineFlag:1273864509383250012>",
+	"englishFlag": "<:englishFlag:1273864693412397179>",
+
+	"helpMenu": "<:helpMenu:1383937525864861826>",
+	"animeName": "<:animeName:1383937534878416906>",
+	"serverInfo": "<:serverInfo:1383937543476740096>",
+	"locale": "<:locale:1383939779313537157>"
+}

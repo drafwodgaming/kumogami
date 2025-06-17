@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+ discordbot:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  container_name: kumogami
+  networks:
+   - botnet
+  restart: always
+
+networks:
+ botnet:
+  driver: bridge

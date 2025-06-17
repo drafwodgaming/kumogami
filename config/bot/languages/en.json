@@ -1,0 +1,147 @@
+{
+	"commands": {
+		"tag": "J-CL Interface",
+		"anime": {
+			"api": "anilist",
+			"title": "{{title}}",
+			"description": "{{description}}",
+			"url": "{{animeUrl}}",
+			"image": "{{image}}",
+			"genres": "**Genres:** {{genres}}",
+			"episodeCount": "**Episodes:** {{episodeCount}}",
+			"score": "**Score:** {{score}}",
+			"animeView": "View on AniList"
+		},
+		"help": {
+			"title": "{{helpEmoji}}・**Help Panel**",
+			"command": {
+				"anime": {
+					"description": "**Anime**"
+				},
+				"serverinfo": {
+					"description": "**Info**"
+				},
+				"setLocale": {
+					"description": "**Language Setup**"
+				},
+				"setupChannels": {
+					"description": "**Channels Setup**"
+				}
+			},
+			"intro": "commands.help.intro"
+		},
+		"language": {
+			"updated": "{{flag}} **Language set to {{language}}**"
+		},
+		"serverInfo": {
+			"title": "About This Server",
+			"noDescription": "No description provided",
+			"generalLabel": "Overview",
+			"guildOwnerId": "Owner: <@{{ownerId}}>",
+			"createdAt": "Created: {{guildCreatedAt}}",
+			"totalMembersCount": "Total Members [ {{totalMembersCount}} ]",
+			"guildMembersCount": "Users: {{nonBotMembersCount}}",
+			"guildBotsCount": "Bots: {{botMembersCount}}",
+			"totalChannelsCount": "Total Channels [ {{totalChannels}} ]",
+			"textChannelsCount": "{{textChannelsIco}}  `{{textChannels}}`",
+			"voiceChannelsCount": "{{voiceChannelsIco}} `{{voiceChannels}}`",
+			"categoriesCount": "{{categoriesIco}} `{{categoryChannels}}`",
+			"stageChannelsCount": "{{stageChannelsIco}} `{{stageChannels}}`",
+			"forumsCount": "{{forumsIco}} `{{forumChannels}}`",
+			"totalEmojisCount": "Total Emojis [ {{totalEmojisCount}} ]",
+			"animatedEmojisCount": "Animated: {{animatedEmojisCount}}",
+			"staticEmojisCount": "Static: {{staticEmojisCount}}",
+			"guildRolesCount": "Total Roles [ {{totalRolesCount}} ]"
+		},
+		"report": {
+			"description": "Write a message to the owner of the bot",
+			"typeDescription": "Select type",
+			"reportDescription": "Describe your bug/suggestion",
+			"bugTitle": "{{bug}} | Bug",
+			"suggestionTitle": "{{suggestion}} | Suggestion",
+			"otherTitle": "{{other}} | Other",
+			"reportBy": "Report by {{user}} (Server: {{guild}})",
+			"succesSendReport": "**Репорт успешно отправлен**",
+			"fields": {
+				"description": "Description"
+			},
+			"preview": "Report Preview:"
+		}
+	},
+	"components": {
+		"menus": {
+			"welcomeChannelSelect": {
+				"placeholder": "Select a welcome channel",
+				"channelSet": "**Welcome channel set to <#{{channelId}}>.**",
+				"channelAlreadySet": "This channel is already set up"
+			},
+			"leaveChannelSelect": {
+				"placeholder": "Select a leave channel",
+				"channelSet": "**Leave channel set to <#{{channelId}}>.**",
+				"channelAlreadySet": "This channel is already set up"
+			},
+			"JTCSystemChannelSelect": {
+				"placeholder": "Select a channel for the \"Join To Create\" system",
+				"channelSet": "**\"Join To Create\" channel set to <#{{channelId}}>.**",
+				"channelAlreadySet": "This channel is already set up"
+			},
+			"voiceHub": {
+				"channelSettings": {
+					"placeholder": "Change Channel Settings",
+					"options": {
+						"nameLabel": "Name",
+						"nameDescription": "Change channel name",
+						"limitLabel": "Limit",
+						"limitDescription": "Change channel user limit"
+					}
+				},
+				"channelPermissions": {
+					"placeholder": "Change Channel Permissions",
+					"options": {
+						"lockChannelLabel": "Lock",
+						"lockChannelDescription": "Lock channel",
+						"unlockChannelLabel": "Unlock",
+						"unlockChannelDescription": "Unlock channel"
+					}
+				},
+				"channelInvite": {
+					"placeholder": "Select Member",
+					"inviteSuccess": "User has been invited to the channel!",
+					"inviteError": "User has their DMs disabled.",
+					"options": {
+						"inviteLabel": "Invite",
+						"inviteDescription": "Invite a user to access the channel"
+					}
+				}
+			}
+		},
+		"setupDescription": {
+			"title": "✨ **Server Setup**",
+			"text": "Select the required settings using the selectors below:"
+		},
+		"modals": {
+			"channelName": {
+				"title": "Change Channel Name",
+				"label": "Enter a new channel name",
+				"successMessage": "Channel name successfully changed",
+				"exampleName": "Example: Talking",
+				"renameCooldownMessage": "Please wait {{remainingMinutes}} minute(s) before changing the channel name again"
+			},
+			"channelLimit": {
+				"title": "Change User Limit",
+				"label": "Enter the limit",
+				"successMessage": "User limit has been changed",
+				"invalidLimit": "Enter a number from 0 to 99 (0 means unlimited)",
+				"exampleName": "0 (for unlimited)"
+			}
+		}
+	},
+	"events": {
+		"voiceHub": {
+			"title": "Welcome to your own temporary voice channel!",
+			"customizeDescription": "You can change various settings for your channel using the options below.\n",
+			"importantInfoDescription": "This is a **temporary** voice channel, which will be deleted if no members are in it.",
+			"permissionsUpdated": "Voice channel was successfully modified"
+		}
+	}
+}
